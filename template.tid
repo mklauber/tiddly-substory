@@ -1,14 +1,21 @@
 created: 20160304120029999
 mklauber-editing-field: text
-modified: 20160308205744947
+modified: 20160309161128747
 tags: $:/tags/ViewTemplate
 title: $:/plugins/mklauber/substory/template
+
+\define story()
+$:/substory/$(root)$/
+\end
+
+\define history()
+$:/substory/$(root)$/history
+\end
+
 
 <$list filter="[is[current]tag[SubStory]]">
 
 <$set name="root" value={{!!title}} >
-<$set name="story" filter="[is[current]addprefix[$:/substory/]]">
-<$set name="history" filter="[is[current]addprefix[$:/substory/]addsuffix[/history]]">
 <$navigator story=<<story>>  history=<<history>>>
 
 <$transclude />
@@ -16,7 +23,5 @@ title: $:/plugins/mklauber/substory/template
 <$list filter="[list<story>]" history=<<history>>  template="$:/plugins/mklauber/substory/ViewTemplate" editTemplate="$:/plugins/mklauber/substory/EditTemplate" />
 
 </$navigator>
-</$set>
-</$set>
 </$set>
 </$list>
