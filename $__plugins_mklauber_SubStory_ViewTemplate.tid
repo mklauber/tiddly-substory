@@ -1,8 +1,7 @@
-created: 20160304121349569
-mklauber-editing-field: text
-modified: 20160308210128051
+created: 20170613200157145
+modified: 20170613233129935
 tags: 
-title: $:/plugins/mklauber/substory/ViewTemplate
+title: $:/plugins/mklauber/SubStory/ViewTemplate
 
 \define frame-classes()
  tc-tiddler-view-frame $(missingTiddlerClass)$ $(shadowTiddlerClass)$ $(systemTiddlerClass)$ $(tiddlerTagClasses)$
@@ -34,7 +33,7 @@ $:/config/ViewToolbarButtons/Visibility/$(listItem)$
 <$transclude tiddler={{!!icon}}/>
 </span>
 </$set>
-<$list filter="[all[current]removeprefix[$:/substory/]removeprefix<root>removeprefix[/]]">
+<$list filter="[all[current]removeprefix<currentPrefix>]">
 <h2 class="tc-title" title={{$:/language/SystemTiddler/Tooltip}}>
 <$text text=<<currentTiddler>>/>
 </h2>

@@ -1,7 +1,7 @@
-created: 20160304121619514
-modified: 20160304121659054
+created: 20170613200400571
+modified: 20170613233118723
 tags: 
-title: $:/plugins/mklauber/substory/EditTemplate
+title: $:/plugins/mklauber/SubStory/EditTemplate
 
 \define frame-classes()
 tc-tiddler-edit-frame $(missingTiddlerClass)$ $(shadowTiddlerClass)$ $(systemTiddlerClass)$

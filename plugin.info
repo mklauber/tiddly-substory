@@ -1,9 +1,9 @@
 {
     "title": "$:/plugins/mklauber/substory",
-    "description": "Sane Substory Tag",
+    "description": "Sane Substory Implementation",
     "author": "Matthew Lauber",
-    "version": "1.1.2",
+    "version": "2.0.0",
     "core-version": ">=5.0.0",
     "plugin-type": "plugin",
-	"list": ""
+	"list": "readme"
 }
