@@ -14,7 +14,7 @@ title: $:/plugins/mklauber/SubStory/Template
 
 <$transclude />
 
-<$list filter="[list<story>]" history=<<history>>  template="$:/plugins/mklauber/SubStory/ViewTemplate" editTemplate="$:/plugins/mklauber/SubStory/EditTemplate" />
+<$list filter="[list<story>]" history=<<history>>  template="$:/plugins/mklauber/SubStory/ViewTemplate" editTemplate="$:/core/ui/EditTemplate" />
 
 </$navigator>
 </$set>
